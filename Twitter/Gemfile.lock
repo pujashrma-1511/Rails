@@ -71,6 +71,7 @@ GEM
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
     base64 (0.2.0)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
@@ -135,7 +136,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.16.4-x64-mingw-ucrt)
+    nokogiri (1.16.5-x64-mingw-ucrt)
       racc (~> 1.4)
     pg (1.1.4)
     psych (5.1.2)
@@ -183,7 +184,7 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.1)
-    reline (0.5.6)
+    reline (0.5.7)
       io-console (~> 0.5)
     rexml (3.2.6)
     rubyzip (2.3.2)
@@ -226,12 +227,13 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.13)
+    zeitwerk (2.6.14)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bcrypt (= 3.1.13)
   bootsnap
   bootstrap-sass (= 3.4.1)
   capybara
