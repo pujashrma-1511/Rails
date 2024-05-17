@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
  end
 
  test "should be valid" do
-  assert_not @user.valid?
+  assert @user.valid?
  end
 
  test "name should be present" do
@@ -35,7 +35,7 @@ class UserTest < ActiveSupport::TestCase
     valid_addresses = %w[user@example.com USER@foo.COM A_USER@foo.bar.org first.last@foo.jp alice+bob@baz.cn]
     valid_addresses.each do |valid_address|
       @user.email = valid_address
-      assert_not @user.valid?, "#{valid_address.inspect} should be valid"
+      assert @user.valid?, "#{valid_address.inspect} should be valid"
     end
   end
 
