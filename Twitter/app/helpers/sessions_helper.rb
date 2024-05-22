@@ -15,6 +15,7 @@ module SessionsHelper
 
     # Returns the current logged-in user (if any).
 	def current_user
+		# debugger
 		if (user_id = session[:user_id])
           @current_user ||= User.find_by(id: user_id)
          elsif (user_id = cookies.encrypted[:user_id])
