@@ -8,7 +8,6 @@ def setup
 end
 
 test "current_user returns right user when session is nil" do
-   # debugger
    assert_equal @user, current_user
    assert is_logged_in?
 end
